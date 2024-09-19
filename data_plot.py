@@ -8,21 +8,24 @@ def plot_graph(x, y, Label = "f"): #Plotter inn grafen i et koordinatsystem
     plt.plot(x,y, "--", label = Label)
     plt.legend()
 
-def beregning(posisjon, pucknr, plot = False):
-    fart = [posisjon[0], [], []] # Lager tomt fartsarray som skal ha verdiene t, v_x, v_y
+def beregning(posisjoner: list[list], pucknr, plot = False):
+    """
+    The beregning function calculates and optionally plots the velocity and acceleration from position data. It returns the velocity and acceleration. 
+    """
+    fart = [posisjoner[0], [], []] # Lager tomt fartsarray som skal ha verdiene t, v_x, v_y
 
-    posisjon_derivering(posisjon,fart)
+    posisjon_derivering(posisjoner,fart)
 
     akselerasjon = [fart[0], [], []]
 
     fart_derivering(fart, akselerasjon)
 
-    abspos = [posisjon[0],[]] # Beregner absoluttposisjon (gir dette mening?)
+    abspos = [posisjoner[0],[]] # Beregner absoluttposisjon (gir dette mening?)
     absfart = [fart[0],[]] # Beregner absoluttfart
     absaks = [akselerasjon[0],[]] # Beregner absoluttakselerasjon
 
-    for i in range(len(posisjon[0])):
-        abspos[1].append(np.sqrt(posisjon[1][i]**2+posisjon[2][i]**2))
+    for i in range(len(posisjoner[0])):
+        abspos[1].append(np.sqrt(posisjoner[1][i]**2+posisjoner[2][i]**2))
     for i in range(len(fart[0])):
         absfart[1].append(np.sqrt(fart[1][i]**2+fart[2][i]**2))
     for i in range(len(akselerasjon[0])):
