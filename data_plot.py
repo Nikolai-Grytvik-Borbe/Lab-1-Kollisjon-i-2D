@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+from get_data import *
 
 
 
@@ -73,5 +73,5 @@ def beregning(posisjon):
     plot_graph(abspos[0],abspos[1], "Posisjon")
     plot_graph(absfart[0],absfart[1], "Fart")
     plot_graph(absaks[0],absaks[1], "Akselerasjon")
-
+beregning(get_puck1())
 plt.show()

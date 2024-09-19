@@ -30,3 +30,4 @@ def get_puck2():
     puck2 = data[1]
     
     return puck2 
+print(get_puck1())
