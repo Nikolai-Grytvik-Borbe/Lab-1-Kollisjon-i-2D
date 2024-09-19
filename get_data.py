@@ -13,9 +13,9 @@ def get_data() -> list[list]:
     puck1 = []
     puck2 = []
 
-    time  = data[:,0]
-    puck1 = [time, data[:,1], data[:,2]]
-    puck2 = [time, data[:,3], data[:,4]]
+    time  = data[:,0].tolist()
+    puck1 = [time, data[:,1].tolist(), data[:,2].tolist()]
+    puck2 = [time, data[:,3].tolist(), data[:,4].tolist()]
 
     return [puck1, puck2]
 
