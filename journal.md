@@ -5,7 +5,7 @@ Navn: Nikolai G. Borbe, Karl-Arne Opkvitne
 ### Hensikt
 -> SKRIV INN HER
 
-Utstyr:
+### Utstyr:
 - Kamera: "Panasonic DMC-FZ200", ID: .
 - Linse: "DC VARIO-ELMARIT 1:2.8/4.5-108 ASPH.", ID: .
 
@@ -14,6 +14,9 @@ Utstyr:
 
 
 
-Beskrivelse:
+### Beskrivelse:
 
 Vi har 2 pucker med henholdsvis masse $m_1$ og radius $r_1$, og masse $m_2$ og radius $r_2$. Først målte vi de to puckene, for å kunne utføre beregninger ved å ta i bruk de teoretiske formlene.
+
+![Diagram over bord](./images/bord.jpg "Diagram over bord")
+![Diagram til puck](./images/puck.jpg "Diagram til puck")
