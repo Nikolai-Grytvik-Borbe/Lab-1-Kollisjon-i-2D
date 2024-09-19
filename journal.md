@@ -20,5 +20,5 @@ Navn: Nikolai G. Borbe, Karl-Arne Opkvitne
 Vi har 2 pucker med henholdsvis masse $m_1$ og radius $r_1$, og masse $m_2$ og radius $r_2$. Først målte vi de to puckene, for å kunne utføre beregninger ved å ta i bruk de teoretiske formlene.
 
 ![Diagram over bord](./images/bord.jpg "Diagram over bord")
-
+For at friksjonskraften mellom bordet og pucken skulle bli minst mulig hadde vi et "luftbord", altså det ble pumpet luft opp gjennom små hull i bordet slik at kontakten mellom bordet og pucken blir minst mulig. 
 ![Diagram til puck](./images/puck.jpg "Diagram til puck")
