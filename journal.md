@@ -14,3 +14,6 @@ Utstyr:
 
 
 
+Beskrivelse:
+
+Vi har 2 pucker med henholdsvis masse $m_1$ og radius $r_1$, og masse $m_2$ og radius $r_2$. Først målte vi de to puckene, for å kunne utføre beregninger ved å ta i bruk de teoretiske formlene.
