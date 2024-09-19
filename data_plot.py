@@ -8,7 +8,7 @@ def plot_graph(x, y, Label = "f"): #Plotter inn grafen i et koordinatsystem
     plt.plot(x,y, "--", label = Label)
     plt.legend()
 
-def beregning(posisjon, pucknr):
+def beregning(posisjon, pucknr, plot = True):
     fart = [posisjon[0], [], []] # Lager tomt fartsarray som skal ha verdiene t, v_x, v_y
 
     def posisjon_derivering(): # Deriverer posisjonsdataen med hensyn på t
@@ -69,12 +69,12 @@ def beregning(posisjon, pucknr):
         absaks[1].append(np.sqrt(akselerasjon[1][i]**2+akselerasjon[2][i]**2))
 
 
-
-    plot_graph(abspos[0],abspos[1], f"Posisjon {pucknr}")
-    plot_graph(absfart[0],absfart[1], f"Fart {pucknr}")
-    #plot_graph(absaks[0],absaks[1], f"Akselerasjon {pucknr}")
+    if plot == True:
+        plot_graph(abspos[0],abspos[1], f"Posisjon {pucknr}")
+        plot_graph(absfart[0],absfart[1], f"Fart {pucknr}")
+        plot_graph(absaks[0],absaks[1], f"Akselerasjon {pucknr}")
     return fart, akselerasjon
-beregning(get_puck1(), "1")
-beregning(get_puck2(), "2")
-plt.show()
-print(get_puck1())
+
+#beregning(get_puck1(), "1")
+#beregning(get_puck2(), "2")
+#plt.show()
