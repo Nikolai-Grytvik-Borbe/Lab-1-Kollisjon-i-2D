@@ -5,8 +5,8 @@ posisjon2 = get_puck2()
 
 fart1, akselerasjon1 = beregning(posisjon1, "1", False)
 fart2, akselerasjon2 = beregning(posisjon2, "2", False)
-m1 = 0.030 # 30 gram
-m2 = 0.030
+m1 = 0.031638 # 30 gram
+m2 = 0.029797
 
 tid = posisjon1[0]
 bevegelsesmengde_x = []

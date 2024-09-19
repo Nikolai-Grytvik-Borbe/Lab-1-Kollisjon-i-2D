@@ -38,6 +38,3 @@ def beregning(posisjoner: list[list], pucknr, plot = False):
         plot_graph(absaks[0],absaks[1], f"Akselerasjon {pucknr}")
     return fart, akselerasjon
 
-beregning(get_puck1(), "1", True)
-beregning(get_puck2(), "2", True)
-plt.show()
