@@ -10,7 +10,8 @@ Navn: Nikolai G. Borbe, Karl-Arne Opkvitne
 - Linse: "DC VARIO-ELMARIT 1:2.8/4.5-108 ASPH.", ID: .
 
 1. Setter kamera instillinger til: 100fps HD MP4. Kamera: , Linse: .
-2. 
+2. Luftbord (Anslått friksjonsfritt)
+3. 2 Pucker
 
 
 
@@ -18,5 +19,6 @@ Navn: Nikolai G. Borbe, Karl-Arne Opkvitne
 
 Vi har 2 pucker med henholdsvis masse $m_1$ og radius $r_1$, og masse $m_2$ og radius $r_2$. Først målte vi de to puckene, for å kunne utføre beregninger ved å ta i bruk de teoretiske formlene.
 
-![Diagram over bord](./images/bord.jpg "Diagram over bord")
-![Diagram til puck](./images/puck.jpg "Diagram til puck")
+![Diagram over bord](./images/puck.jpg "Diagram over bord")
+
+![Diagram til puck](./images/bord.jpg "Diagram til puck")
