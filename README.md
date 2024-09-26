@@ -3,7 +3,7 @@ Dato: 19/09/2024
 Navn: Nikolai G. Borbe, Karl-Arne Opkvitne
 
 ### Hensikt
--> SKRIV INN HER
+Undersøke om bevegelsesmengde og mekanisk energi er bevart i kollisjoner der friksjon er neglisjerbar.
 
 ### Utstyr:
 - Kamera: "Panasonic DMC-FZ200".
