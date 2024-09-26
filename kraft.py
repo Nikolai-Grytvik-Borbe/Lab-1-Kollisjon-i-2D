@@ -4,8 +4,8 @@ from constants import MASSE1, MASSE2
 posisjon1 = get_puck1()
 posisjon2 = get_puck2()
 
-fart1, akselerasjon1 = beregning(posisjon1, "1")
-fart2, akselerasjon2 = beregning(posisjon2, "2")
+fart1, akselerasjon1 = beregning(posisjon1)
+fart2, akselerasjon2 = beregning(posisjon2)
 
 
 def kraft_liste(akselerasjon, masse):
@@ -21,5 +21,10 @@ def kraft_liste(akselerasjon, masse):
 kraft1 = kraft_liste(akselerasjon1, MASSE1)
 kraft2 = kraft_liste(akselerasjon2, MASSE2)
 
-plt.plot(akselerasjon1[0], kraft1)
+plt.plot(akselerasjon1[0], kraft1, label="Disk1")
+plt.plot(akselerasjon1[0], kraft2, label="Disk 2")
+plt.xlabel("Tid $(s)$")
+plt.ylabel("Kraft $(N)$")
+plt.legend()
+plt.grid(True)
 plt.show()
