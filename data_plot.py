@@ -20,6 +20,7 @@ def beregning(posisjoner: list[list], pucknr, plot = False):
 
     fart_derivering(fart, akselerasjon)
 
+    # Første del i lista er bare t-verdiene
     abspos = [posisjoner[0],[]] # Beregner absoluttposisjon (gir dette mening?)
     absfart = [fart[0],[]] # Beregner absoluttfart
     absaks = [akselerasjon[0],[]] # Beregner absoluttakselerasjon
