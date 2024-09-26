@@ -19,7 +19,7 @@ Undersøke om bevegelsesmengde og mekanisk energi er bevart i kollisjoner der fr
 Vi har 2 pucker med henholdsvis masse $m_1=29.8 g$ og radius $r_1 = 3.5 cm$, og masse $m_2=31.6 cm$ og radius $r_2=3.5 cm$. Først målte vi de to puckene, for å kunne utføre beregninger ved å ta i bruk de teoretiske formlene.
 
 ![Diagram over bord](./images/bord.jpg "Diagram over bord")
-For at friksjonskraften mellom bordet og pucken skulle bli minst mulig hadde vi et "luftbord", altså det ble pumpet luft opp gjennom små hull i bordet slik at kontakten mellom bordet og pucken blir minst mulig. 
+For at friksjonskraften mellom bordet og pucken skulle bli minst mulig hadde vi et horisontalt "luftbord", altså det ble pumpet luft opp gjennom små hull i bordet slik at kontakten mellom bordet og pucken blir minst mulig. 
 ![Diagram til puck](./images/puck.jpg "Diagram til puck")
 
 ### Resultater
@@ -31,3 +31,4 @@ x, y: *cm*.
 ![figure_1](./images/Figure_1.png)
 
 ### Konklusjon
+Vi fant at bevegelsesmengde og kinetisk energi ikke ble bevart.
