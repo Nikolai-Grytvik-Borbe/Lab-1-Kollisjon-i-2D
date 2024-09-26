@@ -4,11 +4,7 @@ from get_data import *
 from derivasjon import *
 
 
-def plot_graph(x, y, Label = "f"): #Plotter inn grafen i et koordinatsystem
-    plt.plot(x,y, "--", label = Label)
-    plt.legend()
-
-def beregning(posisjoner: list[list], pucknr, plot = False):
+def beregning(posisjoner: list[list]):
     """
     The beregning function calculates and optionally plots the velocity and acceleration from position data. It returns the velocity and acceleration. 
     """
@@ -33,9 +29,15 @@ def beregning(posisjoner: list[list], pucknr, plot = False):
         absaks[1].append(np.sqrt(akselerasjon[1][i]**2+akselerasjon[2][i]**2))
 
 
-    if plot == True:
-        plot_graph(abspos[0],abspos[1], f"Posisjon {pucknr}")
-        plot_graph(absfart[0],absfart[1], f"Fart {pucknr}")
-        plot_graph(absaks[0],absaks[1], f"Akselerasjon {pucknr}")
     return fart, akselerasjon
 
+"""
+data1 = beregning(get_puck1())
+data2 = beregning(get_puck2())
+plt.plot(data1[0], data1[1], "c", label="Disk 1")
+plt.plot(data2[0], data2[1], "--m", label="Disk 2")
+plt.xlabel("Tid $(s)$")
+plt.ylabel("Akselerasjon $({cm}/{s^2})$")
+plt.legend()
+plt.show()
+"""

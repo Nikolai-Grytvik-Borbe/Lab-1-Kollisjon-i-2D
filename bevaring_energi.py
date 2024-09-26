@@ -2,16 +2,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 from constants import MASSE1, MASSE2, kalk_energi
 from get_data import get_puck1, get_puck2
-from data_plot import beregning, plot_graph
+from data_plot import beregning
 
 posisjon1 = get_puck1()
 posisjon2 = get_puck2()
 
 
-fart1, akselerasjon1 = beregning(posisjon1, "1", False)
+fart1, akselerasjon1 = beregning(posisjon1)
 tot_fart1 = [np.sqrt(x**2 + y**2) for x, y in zip(fart1[1], fart1[2])]
 
-fart2, akselerasjon2 = beregning(posisjon2, "2", False)
+fart2, akselerasjon2 = beregning(posisjon2)
 tot_fart2 = [np.sqrt(x**2 + y**2) for x, y in zip(fart2[1], fart2[2])]
 
 
