@@ -36,14 +36,17 @@ def endring_energi(data, masse) -> list[list]:
     return [tider, energi]
 
 
-"""
 tider, energi1 = endring_energi(fart1, MASSE1)   # <- unpacker tider og energi fra endring_energi()
 _, energi2 = endring_energi(fart2, MASSE2)       # <- Samme, men bruker ikke tidene herifra
 
-plot_graph(tider, energi1)
-plot_graph(tider, energi2)
+sum_energi = [energi1[i]+energi2[i] for i in range(len(energi1))]
+
+plt.plot(tider, energi1, "--r", label="Energi disk 1")
+plt.plot(tider, energi2, "--b", label="Energi disk 2")
+plt.plot(tider, sum_energi, "g", label="Sum")
+plt.legend()
+plt.grid(True)
 plt.show()
-"""
 
 
 
