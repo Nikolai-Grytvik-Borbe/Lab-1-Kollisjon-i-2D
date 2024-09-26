@@ -17,7 +17,7 @@ def posisjon_derivering(posisjon, fart): # Deriverer posisjonsdataen med hensyn 
         else:
             #Fart i siste 10ms
             vx = (posisjon[1][i]-posisjon[1][i-1])/(posisjon[0][i]-posisjon[0][i-1]) # Gjennomsnittlig fart fra posisjon tid t = t_max-0.01 til t = t_max
-            vy = (posisjon[2][i]-posisjon[2][i-1])/(posisjon[0][i]-posisjon[0][i-1])
+            vy = (posisjon[2][i]-posisjon[2][i-1])/(posisjon[0][i]-posisjon[0][i-1]) # litt feil, dgb
             fart[1].append(vx)
             fart[2].append(vy)
     return fart
