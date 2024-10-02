@@ -34,17 +34,17 @@ def standardavvik(datasett, middelverdi, startframe, sluttframe):
 
     avvik = 0
 
-    for i in range(sluttframe- startframe):
+    for i in range(sluttframe- startframe): 
         avvik += (abs_datasett[i]-middelverdi)**2
-    avvik *= 1/(sluttframe - startframe)
+    avvik *= 1/(sluttframe - startframe -1) # -1 fordi se standardavvik formel
     avvik = sqrt(avvik)
     return avvik
         
 
 
 print("\n")
-startframe = 20 # Sett inn verdiene du vil her
-sluttframe = 28 #
+startframe = 0 # Sett inn verdiene du vil her
+sluttframe = 15 #
 
 print(middelverdien(fart1, startframe, sluttframe))
 print(standardavvik(fart1, middelverdien(fart1, startframe, sluttframe), startframe, sluttframe))
