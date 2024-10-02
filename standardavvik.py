@@ -12,30 +12,30 @@ startframe = 0
 sluttframe = len(posisjon1[0])
 
 
-def fart_til_absfart(fart, startframe, sluttframe):
-    absfart = []
+def data_absoluttverdi(datasett, startframe, sluttframe):
+    abs_datasett = []
     for i in range(startframe, sluttframe):
-        absfart.append(sqrt(fart[1][i]**2+fart[2][i]**2))
-    return absfart
+        abs_datasett.append(sqrt(datasett[1][i]**2+datasett[2][i]**2))
+    return abs_datasett
 
-def middelverdien(fart, startframe, sluttframe):
-    absfart = fart_til_absfart(fart, startframe, sluttframe)
+def middelverdien(datasett, startframe, sluttframe):
+    abs_datasett = data_absoluttverdi(datasett, startframe, sluttframe)
 
     middelverdi = 0
 
-    for i in range(len(absfart)):
-        middelverdi += absfart[i]
-    middelverdi *= 1/len(absfart)
+    for i in range(len(abs_datasett)):
+        middelverdi += abs_datasett[i]
+    middelverdi *= 1/len(abs_datasett)
     return middelverdi
 
 
-def standardavvik(fart,middelverdi, startframe, sluttframe):
-    absfart = fart_til_absfart(fart, startframe, sluttframe)
+def standardavvik(datasett, middelverdi, startframe, sluttframe):
+    abs_datasett = data_absoluttverdi(datasett, startframe, sluttframe)
 
     avvik = 0
 
     for i in range(startframe, sluttframe):
-        avvik += (absfart[i]-middelverdi)**2
+        avvik += (abs_datasett[i]-middelverdi)**2
     avvik *= 1/(sluttframe - startframe)
     avvik = sqrt(avvik)
     return avvik
@@ -43,7 +43,8 @@ def standardavvik(fart,middelverdi, startframe, sluttframe):
 
 
 print("\n")
+startframe = 0 # Sett inn verdiene du vil her
+sluttframe = 15 #
 
-print(middelverdien(fart1, 0, 15))
-
-print(standardavvik(fart1, middelverdien(fart1, 0, 16), 0, 1))
+print(middelverdien(fart1, startframe, sluttframe))
+print(standardavvik(fart1, middelverdien(fart1, startframe, sluttframe), startframe, sluttframe))
