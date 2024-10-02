@@ -36,15 +36,30 @@ def standardavvik(datasett, middelverdi, startframe, sluttframe):
 
     for i in range(sluttframe- startframe): 
         avvik += (abs_datasett[i]-middelverdi)**2
-    avvik *= 1/(sluttframe - startframe -1) # -1 fordi se standardavvik formel
+    avvik *= 1/(sluttframe - startframe - 1) # -1 fordi se standardavvik formel
     avvik = sqrt(avvik)
     return avvik
-        
+
+
+def frames_tid(data, startframe, sluttframe):
+    tid = []
+    for i in range(startframe, sluttframe):
+        tid.append(data[0][i])
+    return tid
 
 
 print("\n")
 startframe = 0 # Sett inn verdiene du vil her
 sluttframe = 15 #
+datasett_studerer = fart1
 
-print(middelverdien(fart1, startframe, sluttframe))
-print(standardavvik(fart1, middelverdien(fart1, startframe, sluttframe), startframe, sluttframe))
+standardavviket = standardavvik(datasett_studerer, middelverdien(datasett_studerer, startframe, sluttframe), startframe, sluttframe)
+avvik_liste = [standardavviket] * len(frames_tid(datasett_studerer, startframe, sluttframe))
+
+print(middelverdien(datasett_studerer, startframe, sluttframe))
+print(standardavviket)
+
+# Under har alle error-bars lik lengde fordi jeg har bare satt på standardavviket som y-error, vet ikke hvorfor noen grafer da har error bars med forskjellig lengde, men jaja
+
+plt.errorbar(frames_tid(datasett_studerer, startframe, sluttframe), data_absoluttverdi(datasett_studerer, startframe, sluttframe), yerr = avvik_liste)
+plt.show()
