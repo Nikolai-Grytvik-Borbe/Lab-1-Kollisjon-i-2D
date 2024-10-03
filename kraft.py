@@ -21,8 +21,8 @@ def kraft_liste(akselerasjon, masse):
 kraft1 = kraft_liste(akselerasjon1, MASSE1)
 kraft2 = kraft_liste(akselerasjon2, MASSE2)
 
-plt.plot(akselerasjon1[0], kraft1, label="Disk1")
-plt.plot(akselerasjon1[0], kraft2, label="Disk 2")
+plt.plot(akselerasjon1[0], kraft1, "b", label="Disk 1")
+plt.plot(akselerasjon1[0], kraft2, "r", label="Disk 2")
 plt.xlabel("Tid $(s)$")
 plt.ylabel("Kraft $(N)$")
 plt.legend()

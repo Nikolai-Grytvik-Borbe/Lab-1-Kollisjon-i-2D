@@ -19,7 +19,7 @@ bevegelsesmengde_total = []
 for i in range(len(tid)):
     bevegelsesmengde_total.append(np.sqrt(bevegelsesmengde_x[i]**2+bevegelsesmengde_y[i]**2))
 
-plt.plot(tid, bevegelsesmengde_total, "r", label="Bevegelsesmengde")
+plt.plot(tid, bevegelsesmengde_total, "k", label="Bevegelsesmengde")
 plt.xlabel("Tid $(s)$")
 plt.ylabel("Bevegelsesmengde $({m}\\cdot{v})$")
 plt.legend()
