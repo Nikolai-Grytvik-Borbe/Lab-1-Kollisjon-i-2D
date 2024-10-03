@@ -34,10 +34,11 @@ def beregning(posisjoner: list[list]):
 """
 data1 = beregning(get_puck1())
 data2 = beregning(get_puck2())
-plt.plot(data1[0], data1[1], "c", label="Disk 1")
-plt.plot(data2[0], data2[1], "--m", label="Disk 2")
+plt.plot(data1[0], data1[1], "b", label="Disk 1")
+plt.plot(data2[0], data2[1], "r", label="Disk 2")
 plt.xlabel("Tid $(s)$")
-plt.ylabel("Akselerasjon $({cm}/{s^2})$")
+plt.ylabel("Absolutt posisjon $(cm)$")
+plt.grid(True)
 plt.legend()
 plt.show()
 """
