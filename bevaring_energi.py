@@ -44,6 +44,8 @@ sum_energi = [energi1[i]+energi2[i] for i in range(len(energi1))]
 plt.plot(tider, energi1, "b", label="Disk 1")
 plt.plot(tider, energi2, "r", label="Disk 2")
 plt.plot(tider, sum_energi, "k", label="Sum")
+plt.xlabel("Tid ($s$)")
+plt.ylabel("Energi ($kg\\cdot\\frac{cm^2}{s}$)")
 
 plt.legend()
 plt.grid(True)

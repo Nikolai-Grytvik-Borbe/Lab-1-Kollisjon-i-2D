@@ -21,7 +21,7 @@ for i in range(len(tid)):
 
 plt.plot(tid, bevegelsesmengde_total, "k", label="Bevegelsesmengde")
 plt.xlabel("Tid $(s)$")
-plt.ylabel("Bevegelsesmengde $({m}\\cdot{v})$")
+plt.ylabel("Bevegelsesmengde $({kg}\\cdot{cm/s})$")
 plt.legend()
 plt.grid(True)
 plt.show()
